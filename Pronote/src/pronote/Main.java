@@ -38,6 +38,22 @@ public class Main {
                     
                     choix = new Scanner(System.in).nextInt();
                     break;
+                    
+            }
+            switch(choix){
+                case 1:
+                    System.out.println("\n\n--- CONNEXION PROFESSEUR ---");
+                    System.out.println("Identifiant : ");
+                    String Identifiant = new Scanner(System.in).nextLine();
+                    System.out.println("\n\nMot de passe : ");
+                    String mdp = new Scanner(System.in).nextLine();
+                    break;
+                case 2:
+                    System.out.println("\n\n--- CONNEXION ELEVE ---");
+                    System.out.println("Identifiant : ");
+                    Identifiant = new Scanner(System.in).nextLine();
+                    System.out.println("\n\nMot de passe : ");
+                    mdp = new Scanner(System.in).nextLine();                    
             }
             
         }while(choix != 0);
