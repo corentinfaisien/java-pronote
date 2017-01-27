@@ -37,6 +37,7 @@ public class Main {
                     System.out.println("\n\n--- CONNEXION ---");
                     System.out.println("1. Professeur");
                     System.out.println("2. Eleve");
+                    System.out.println("3. Retour vers le menu");
                     choix = new Scanner(System.in).nextInt();
                     break;
                     
@@ -61,6 +62,7 @@ public class Main {
                     System.out.println("\n\n--- ESPACE ELEVE ---");
                     System.out.println("1. Voir mes notes");
                     System.out.println("2. Voir mes appréciations");
+                    System.out.println("3. Retour vers le menu");
                     choix = new Scanner(System.in).nextInt();
             }
             
