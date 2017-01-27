@@ -22,6 +22,8 @@ public class Main {
         portail = new Portail();
         
         int choix ;
+        String Identifiant;
+        String mdp;
         
         do{
             System.out.println("\n\n--- MENU ---");
@@ -35,7 +37,6 @@ public class Main {
                     System.out.println("\n\n--- CONNEXION ---");
                     System.out.println("1. Professeur");
                     System.out.println("2. Eleve");
-                    
                     choix = new Scanner(System.in).nextInt();
                     break;
                     
@@ -44,16 +45,23 @@ public class Main {
                 case 1:
                     System.out.println("\n\n--- CONNEXION PROFESSEUR ---");
                     System.out.println("Identifiant : ");
-                    String Identifiant = new Scanner(System.in).nextLine();
+                    Identifiant = new Scanner(System.in).nextLine();
                     System.out.println("\n\nMot de passe : ");
-                    String mdp = new Scanner(System.in).nextLine();
+                    mdp = new Scanner(System.in).nextLine();
+                    // si l'identifiant et le mot de passe corespondent (BDD):
+                    // affiche la liste des élèves via la BDD.
                     break;
                 case 2:
                     System.out.println("\n\n--- CONNEXION ELEVE ---");
                     System.out.println("Identifiant : ");
                     Identifiant = new Scanner(System.in).nextLine();
                     System.out.println("\n\nMot de passe : ");
-                    mdp = new Scanner(System.in).nextLine();                    
+                    mdp = new Scanner(System.in).nextLine();
+                    // si l'identifiant et le mot depasse corespondent :
+                    System.out.println("\n\n--- ESPACE ELEVE ---");
+                    System.out.println("1. Voir mes notes");
+                    System.out.println("2. Voir mes appréciations");
+                    choix = new Scanner(System.in).nextInt();
             }
             
         }while(choix != 0);
